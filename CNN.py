@@ -51,7 +51,7 @@ def get_model():
         # ИТОГ: 64 128 256 256
 
         start_time = time.time()
-        history = model.fit(x_train, y_train_cat, batch_size=10000, epochs=10, validation_split=0.2)
+        history = model.fit(x_train, y_train_cat, batch_size=625, epochs=10, validation_split=0.2)
         end_time = time.time()
         execution_time = end_time - start_time
         print("Нейросеть обучилась за ", execution_time, "секунд.")

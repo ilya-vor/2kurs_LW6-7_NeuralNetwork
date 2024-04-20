@@ -18,5 +18,5 @@ predict = model.predict(img)
 result = np.argmax(predict)
 
 results = {0:"самолет", 1:"автомобиль", 2:"птица", 3:"кот", 4:"олень", 5:"собака", 6:"лягушка", 7:"лошадь", 8:"корабль", 9:"грузовик"}
-
+print(predict[0][result])
 print(results.get(result))
